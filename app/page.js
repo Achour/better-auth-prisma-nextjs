@@ -6,7 +6,7 @@ export default async function Home() {
   });
   return (
     <div>
-      <h1>Hello world, {session.user.name}</h1>
+      <h1>Hello world, {!session ? "Not signed in" : session.user.name}</h1>
     </div>
   );
 }

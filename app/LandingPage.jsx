@@ -15,7 +15,7 @@ const LandingPage = () => {
                     <a href="#installation" className="hover:text-blue-400 transition-colors">Installation</a>
                     <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
                     <a
-                        href="https://github.com/yourusername/nextjs-better-auth-prisma"
+                        href="https://github.com/Achour/better-auth-prisma-nextjs"
                         className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md flex items-center gap-2 transition-colors"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -38,7 +38,7 @@ const LandingPage = () => {
                 </p>
                 <div className="flex flex-wrap gap-4 justify-center">
                     <a
-                        href="https://github.com/yourusername/nextjs-better-auth-prisma"
+                        href="https://github.com/Achour/better-auth-prisma-nextjs"
                         className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-md flex items-center gap-2 text-lg font-medium transition-colors"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -152,7 +152,7 @@ const LandingPage = () => {
                     <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Getting Started</h2>
                     <div className="bg-slate-900 p-6 rounded-lg max-w-3xl mx-auto mb-8">
                         <pre className="text-blue-400 overflow-x-auto">
-                            <code>git clone https://github.com/yourusername/nextjs-better-auth-prisma.git</code>
+                            <code>git clone https://github.com/Achour/better-auth-prisma-nextjs.git</code>
                         </pre>
                     </div>
                     <div className="max-w-3xl mx-auto">
@@ -213,7 +213,7 @@ const LandingPage = () => {
                             or documentation improvements, feel free to submit a pull request.
                         </p>
                         <a
-                            href="https://github.com/yourusername/nextjs-better-auth-prisma/issues"
+                            href="https://github.com/Achour/better-auth-prisma-nextjs/issues"
                             className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
                             target="_blank"
                             rel="noopener noreferrer"

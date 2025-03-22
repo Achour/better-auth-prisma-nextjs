@@ -24,10 +24,12 @@ const SignupPage = () => {
             },
             onSuccess: (ctx) => {
                 alert("User created successfully");
+                setIsLoading(false)
             },
             onError: (ctx) => {
                 // display the error message
                 setError(ctx.error.message);
+                setIsLoading(false)
             },
         });
     };

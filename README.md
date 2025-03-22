@@ -45,8 +45,8 @@ yarn
 DATABASE_URL="your-database-connection-string"
 
 # Better Auth config
-BETTER_AUTH_SECRET="your-secret-key-at-least-32-chars"
-NEXTAUTH_URL="http://localhost:3000"
+BETTER_AUTH_SECRET=your-secret-key-at-least-32-chars
+BETTER_AUTH_URL=http://localhost:3000
 ```
 
 4. Set up the database:

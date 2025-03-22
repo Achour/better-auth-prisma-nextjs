@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js + Better Auth + Prisma Starter Kit
+
+A practical starter kit combining Next.js with Better Auth for authentication and Prisma for database management. This template is designed to help beginners get started quickly with a solid foundation for web application development.
+
+## Features
+
+- **Next.js App Router** - Modern React framework with server components and improved routing
+- **Better Auth Integration** - Simple, secure authentication system
+- **Prisma ORM** - Type-safe database client for JavaScript
+- **Credentials Authentication** - Email and password authentication
+- **Ready-to-use Auth Pages** - Pre-built login and registration pages
+- **Database Setup** - Pre-configured Prisma schema and migrations
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 16.x or later
+- npm or yarn
+- A database (PostgreSQL, MySQL, SQLite, etc.)
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Achour/better-auth-prisma-nextjs.git
+cd nextjs-better-auth-prisma
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn
+```
+
+3. Set up environment variables:
+   - Copy the `.env.example` file to `.env.local`
+   - Update the variables with your own values:
+
+```
+# Database connection string
+DATABASE_URL="your-database-connection-string"
+
+# Better Auth config
+BETTER_AUTH_SECRET="your-secret-key-at-least-32-chars"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
+4. Set up the database:
+
+```bash
+npx prisma migrate dev
+```
+
+5. Start the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+6. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Authentication
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This starter kit uses Better Auth for authentication with a credentials provider. Users can sign up and login using their email and password.
 
-## Learn More
+### Authentication Flow
 
-To learn more about Next.js, take a look at the following resources:
+1. User registers with email and password
+2. User logs in with credentials
+3. Better Auth creates and manages sessions
+4. Protected routes check for authenticated status
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Database
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This starter kit uses Prisma as an ORM to interact with your database. The schema includes a basic user model that works with Better Auth.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project can be deployed on any platform that supports Next.js:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Vercel](https://vercel.com/) (recommended)
+- [Netlify](https://www.netlify.com/)
+- Self-hosted with Node.js
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Created with ❤️ to help developers focus on building features rather than setting up infrastructure.

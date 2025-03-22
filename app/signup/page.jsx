@@ -30,13 +30,6 @@ const SignupPage = () => {
                 setError(ctx.error.message);
             },
         });
-
-        // Simulate signup process
-        setTimeout(() => {
-            setIsLoading(false);
-            // Handle signup logic here
-            console.log('Signup attempt with:', { fullName, email, password, agreeToTerms });
-        }, 1500);
     };
 
     return (
